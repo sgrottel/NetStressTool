@@ -11,12 +11,37 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissionsand
 // limitations under the License.
+#include "CmdLine.h"
+
 
 #include <iostream>
 
 int wmain(int argc, wchar_t* argv[])
 {
+    try
+    {
+        netstress::CmdLine cmd;
+        if (!cmd.Parse(argc, argv))
+        {
+            cmd.PrintHelp();
+            return 0;
+        }
 
 
-    std::cout << "Hello World!\n";
+        std::cout << "Hello World!\n";
+
+
+    }
+    catch (std::exception const& ex)
+    {
+        std::cerr << L"EXCEPTION: " << ex.what() << std::endl;
+        return -1;
+    }
+    catch (...)
+    {
+        std::cerr << L"EXCEPTION: unknown exception" << std::endl;
+        return -1;
+    }
+
+    return 0;
 }

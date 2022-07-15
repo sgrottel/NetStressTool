@@ -1,3 +1,4 @@
 ﻿.vs
 consoleapp/obj
 bin
+*.user
