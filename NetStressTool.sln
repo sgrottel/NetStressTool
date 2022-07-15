@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32611.2
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "consoleapp", "consoleapp\consoleapp.vcxproj", "{315C3101-17BE-43C5-9305-5BA79BF02DCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{CAF97108-2662-4E1E-B57C-E05EDC9A130E}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{315C3101-17BE-43C5-9305-5BA79BF02DCC}.Debug|x64.ActiveCfg = Debug|x64
+		{315C3101-17BE-43C5-9305-5BA79BF02DCC}.Debug|x64.Build.0 = Debug|x64
+		{315C3101-17BE-43C5-9305-5BA79BF02DCC}.Debug|x86.ActiveCfg = Debug|Win32
+		{315C3101-17BE-43C5-9305-5BA79BF02DCC}.Debug|x86.Build.0 = Debug|Win32
+		{315C3101-17BE-43C5-9305-5BA79BF02DCC}.Release|x64.ActiveCfg = Release|x64
+		{315C3101-17BE-43C5-9305-5BA79BF02DCC}.Release|x64.Build.0 = Release|x64
+		{315C3101-17BE-43C5-9305-5BA79BF02DCC}.Release|x86.ActiveCfg = Release|Win32
+		{315C3101-17BE-43C5-9305-5BA79BF02DCC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
